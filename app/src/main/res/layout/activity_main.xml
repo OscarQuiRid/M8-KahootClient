@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_mustard"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appName"
+        app:layout_constraintVertical_bias="0.436">
+
+        <TextView
+            android:id="@+id/textViewErrorID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/errorid"
+            android:textColor="@color/error_color"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/frameInputID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_border"
+                android:fontFamily="sans-serif"
+                android:hint="@string/idpartida"
+                app:boxBackgroundMode="none">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="8dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textViewErrorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/nombreerror"
+            android:textColor="@color/error_color"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/frameInputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_border"
+                android:enabled="false"
+                android:fontFamily="sans-serif"
+                android:hint="@string/nombre"
+                app:boxBackgroundMode="none">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="8dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/buttonComezar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/button_color"
+            android:enabled="false"
+            android:fontFamily="sans-serif"
+            android:text="@string/inicio"
+            android:textColor="@color/button_text_color" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

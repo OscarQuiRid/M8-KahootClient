@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KahootAppClient</string>
+    <string name="timer">00:30</string>
+    <string name="espera">Esperando el inicio de la partida...</string>
+    <string name="pregunta">Pregunta</string>
+    <string name="respuesta_1">Respuesta 1</string>
+    <string name="respuesta_2">Respuesta 2</string>
+    <string name="respuesta_3">Respuesta 3</string>
+    <string name="respuesta_4">Respuesta 4</string>
+    <string name="errorid">ID de la partida no existe</string>
+    <string name="idpartida">ID de la partida</string>
+    <string name="nombreerror">Nombre no disponible</string>
+    <string name="nombre">Nombre del jugador</string>
+    <string name="inicio">Iniciar</string>
+    <string name="questionnumber">QuestionNumber</string>
+    <string name="questioncounter">x/xx</string>
+</resources>
